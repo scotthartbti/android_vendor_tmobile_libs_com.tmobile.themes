@@ -304,10 +304,7 @@ public class ThemeItem extends AbstractDAOItem {
         if (theme == null) {
             return false;
         }
-        if (getPackageName().equals(theme.getThemePackageName()) == false) {
-            return false;
-        }
-        return theme.getThemeId().equals(getThemeId());
+        return getPackageName().equals(theme.getThemePackageName());
     }
 
     public String toString() {
